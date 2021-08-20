@@ -24,11 +24,15 @@ function App() {
     }
     ])
 
+    const deletePost =(id) => {
+      console.log('Deleted',id)
+      setPosts(posts.filter((post)=> post.id !== id))
+    }
+
   return (
     <div className="container">
-        
         <Header/>
-        <Posts posts= {posts}/>
+        {posts.lenth > 0 ? <Posts posts= {posts} onDelete={deletePost}/>: 'Empty feed'}
     </div>
   );
 }

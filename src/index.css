@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 800px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -109,4 +109,18 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+.headYo1 {
+ width: 180px;
+ height: 20px;
+ display: inline-block;
+}
+
+.headYo1 p{
+  font-size: 110%;
+}
+
+.txtArea{
+ font-size:24px;
 }
