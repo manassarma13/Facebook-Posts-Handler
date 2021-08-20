@@ -52,6 +52,8 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  color: #fff;
+  background-color: #4267B2;
 }
 
 .post {
