@@ -15,7 +15,7 @@ const Header = ({title}) => {
             <h1 style= {headingStyle}> {title} </h1>
             <Button backgroundColor='#4267B2' text='Post' onClick= {onClick}/>
         </header>
-        <div className="headYo1"><p><FaPenAlt/>Compose Post</p></div>
+        <div className="headYo1" id = "headYo11"><p><FaPenAlt/>Compose Post</p></div>
         <div className="headYo1"><p><FaPhotoVideo/>Photo/Video</p></div>
         <div className="headYo1"><p><FaVideo/>Live Video</p></div>
 
