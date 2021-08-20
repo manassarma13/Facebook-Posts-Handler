@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import Header from "./components/Header";
+import Posts from "./components/Posts";
 
 function App() {
+
+  const[posts, setPosts] = useState([
+        {
+        id: 1,
+        text: 'Username.1',
+        write: 'DC> Marvel'
+    },
+
+    {
+        id: 2,
+        text: 'Username.2',
+        write: 'Coca Cola > Pepsi'
+    },
+
+    {
+        id: 3,
+        text: 'Username.3',
+        write: 'Apple>Samsung'
+    }
+    ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+        
+        <Header/>
+        <Posts posts= {posts}/>
     </div>
   );
 }
