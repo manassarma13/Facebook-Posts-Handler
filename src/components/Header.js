@@ -15,9 +15,9 @@ const Header = ({title}) => {
             <h1 style= {headingStyle}> {title} </h1>
             <Button color='blue' text='Post' onClick= {onClick}/>
         </header>
-        <div class="headYo1"><p><FaPenAlt/>Compose Post</p></div>
-        <div class="headYo1"><p><FaPhotoVideo/>Photo/Video</p></div>
-        <div class="headYo1"><p><FaVideo/>Live Video</p></div>
+        <div className="headYo1"><p><FaPenAlt/>Compose Post</p></div>
+        <div className="headYo1"><p><FaPhotoVideo/>Photo/Video</p></div>
+        <div className="headYo1"><p><FaVideo/>Live Video</p></div>
 
         <div><textarea className="txtArea" rows="2" cols="50" placeholder="How do you feel today?"></textarea></div>
         </div>

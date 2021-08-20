@@ -21,7 +21,8 @@ function App() {
         id: 3,
         text: 'Username.3',
         write: 'Apple>Samsung'
-    }
+    },
+
     ])
 
     const deletePost =(id) => {
@@ -32,7 +33,7 @@ function App() {
   return (
     <div className="container">
         <Header/>
-        {posts.lenth > 0 ? <Posts posts= {posts} onDelete={deletePost}/>: 'Empty feed'}
+        {posts.length > 0 ? <Posts posts= {posts} onDelete={deletePost}/>: 'Empty feed'}
     </div>
   );
 }
